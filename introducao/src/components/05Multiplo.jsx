@@ -1,0 +1,25 @@
+const Header = () => {
+    return(
+        <div>
+            <h1>cabeçalho</h1>
+        </div>
+    )
+}
+
+const Body = () => {
+    return(
+        <div>
+            <h1>corpo</h1>
+        </div>
+    )
+}
+
+const Footer = () => {
+    return(
+        <div>
+            <h1>rodapé</h1>
+        </div>
+    )
+}
+
+export {Header, Body, Footer}
