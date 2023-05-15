@@ -14,6 +14,8 @@ const Questao02 = () => {
     const imgFrente = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png"
     const imgCosta = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/25.png"
     const imgAtual = virar ? imgCosta : imgFrente;
+    // usamos a variável imgAtual para definir o caminho da imagem a ser exibida com base no valor de virar. 
+    // Se virar for true, a imagem de costas irá aparecer; se não, a imagem frontal será exibida.
 
     return (
         <div>
@@ -21,7 +23,8 @@ const Questao02 = () => {
             <img src={imgAtual} alt="pikachu" style={{ width: "400px" , border: "2px"}}
 />
             <button onClick={virando}>virar</button>
-            {/* onclick é um botão de ação, quando clicado ele faz a chamada e faz uma mudança no userState */}
+            {/* Quando o botão é pressionado, chamamos a função virando, 
+            que alterna o valor de virar usando setVirar(!virar), fazendo  a imagem seja atualizada e alternada entre frente e costas. */}
 
         </div>
     )
