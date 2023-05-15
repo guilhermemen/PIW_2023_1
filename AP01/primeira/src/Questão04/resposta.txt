@@ -1,0 +1,20 @@
+Props drilling acontece quando um props é passado de uma pai 
+para o filho e passadno para uma camada mais abaixo e assim sucessivamente 
+uma solução para evitar o props drilling é o uso de context 
+
+Um exemplo de props drilling 
+
+export default function Painel( {username} ) { 
+   return <div><Artigo username={username} /></div>
+}
+
+nesse caso quando passamos um username para o compnente artigo, mas não 
+utilizamos diretamente o no componente painel. Para evitar esse tipo de passagem
+de camada em camada usasse o context; que é uma forma de passar esses dados 
+entre os componentes sem o props ter que passar manualmente em cada nivel 
+
+com o context ficaria da seguinte maneira 
+
+Para passar para o componente painel é necessário criar um contexto, que aqui 
+seria userContext e para passar os valores de pai para filho usasse o provider 
+para receber esse valor chamamos o consumer
