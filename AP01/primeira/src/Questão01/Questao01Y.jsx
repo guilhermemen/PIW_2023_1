@@ -1,3 +1,3 @@
-import React, { useEffect } from 'react';
+// import React, { useEffect } from 'react';
 
-export default Questao01Y
+// export default Questao01Y
