@@ -11,13 +11,13 @@ function Questao01X() {
 
   const [medias, setMedias] = useState([]);
 
-  const handleMediaChange = (medias) => {
+  const mediaFinal = (medias) => {
     setMedias(medias);
   };
 
   return (
     <div>
-      <Questao01Y alunos={alunos} onMediaChange={handleMediaChange} />
+      <Questao01Y alunos={alunos} onMediaChange={mediaFinal} />
 
       <h2>Alunos com média menor ou igual a 5.0:</h2>
       <ul>
